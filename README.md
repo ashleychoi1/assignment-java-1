@@ -19,8 +19,8 @@ Your first challenge is to solve two algorithm questions. You'll be judged based
 Create a function that accepts an array of integers and returns the first duplicate value. Here's an example:
 
 ```java
-int[] testArray = {2, 4, 5, 1, 3, 4, 5}; // 4
-int result = firstDuplicateIn(testArray);
+int[] testArray = {2, 4, 5, 1, 3, 4, 5};
+int result = firstDuplicateIn(testArray); // 4
 ```
 
 Here's a function signature to start you off:
@@ -33,7 +33,7 @@ int firstDuplicateIn(int[] array) {
 
 ### Question 2: Is Palindrome?
 
-Create a function that checks if a string is a palindrome. A palindrome is a word that reads the same way even if you read it backwards.
+Create a function that checks if a string is a palindrome and returns `true` or `false`. A palindrome is a word that reads the same way even if you read it backwards.
 
 Example palindromes:
 
@@ -45,8 +45,7 @@ Here's a function signature to start you off:
 
 ```java
 boolean isPalindrome(String testString) {
-  // Enter your code here
-  return false;
+  // your code here
 }
 ```
 
