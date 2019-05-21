@@ -1,0 +1,30 @@
+class Main {
+  public static void main(String[] args) {
+    int array[] = {9, 1, 5, 9, 0};
+    System.out.println(firstDuplicateIn(array));
+  }
+
+  
+  public static int firstDuplicateIn(int[] array) {
+    int result = 0;
+    for (int index = 0; index < array.length; index++){
+      int x = array[index];
+      
+      for (int index2 = index+1; index2 < array.length ; index2++){
+        int number = array[index2];
+        if (x == number){
+          result = x;
+          return x;
+      
+       
+        }
+        else{
+          System.out.println(x + " not equal " + number);
+        }
+       
+        
+      }        
+    }
+    return result;
+  }
+}
