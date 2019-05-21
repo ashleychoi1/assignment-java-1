@@ -1,0 +1,33 @@
+class Main {
+  public static void main(String[] args) {
+    String testString = "kljfdsa";
+    boolean result = isPalindrome(testString);
+    System.out.println(testString + " is " + result);
+
+
+    testString = "Hannah";
+    result = isPalindrome(testString);
+    System.out.println(testString + " is " + result);
+
+
+  }
+static boolean isPalindrome(String testString) {
+    int position = 0;
+    int matchingPosition = testString.length() - 1;
+    if (testString.charAt(position) == testString.charAt(matchingPosition)){
+      while (position < matchingPosition){
+        if (testString.charAt(position) ==              testString.charAt(matchingPosition)){
+          position += 1;
+          matchingPosition -= 1;
+          return true;
+        }
+        else {
+            return false;
+        } 
+      }
+          
+          
+    }
+  return false;
+  } 
+ }
